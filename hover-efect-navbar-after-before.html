@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navbar for after-before </title>
+    <style>
+        ul {
+            background: coral;
+            margin: 0;
+            padding: 0;
+            /* height: 100px; */
+        }
+        
+        li {
+            display: inline;
+            margin: 40px;
+            text-align: center;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+        }
+        
+        li::after {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 2s;
+        }
+        
+        li:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href=""> Home </a></li>
+        <li>
+            <a href=""> Aboute </a></li>
+        <li>
+            <a href=""> Contect </a></li>
+        <li>
+            <a href=""> Service </a></li>
+    </ul>
+</body>
+
+</html>
